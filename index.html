@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blob Maker</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper ">
+        <div class="output ">
+            <div id="blob"></div>
+        </div>
+        <div class="dimensions">
+            <div>
+                <label for="blob-height">
+                    Height
+                </label>
+                <input type="number" value="250" id="blob-height">
+            </div>
+            <div>
+                <label for="blob-width">
+                    Width
+                </label>
+                <input type="number" value="250" id="blob-width">
+            </div>
+        </div>
+        <div class="sliders">
+            <input type="range" value="30"><span id="si1">30%</span>
+            <input type="range" value="70"><span id="si2">70%</span>
+            <input type="range" value="30"><span id="si3">30%</span>
+            <input type="range" value="70"><span id="si4">70%</span>
+        </div>
+        <input type="text" id="css-code" readonly>
+        <button id="copy">Copy</button>
+    </div>
+   <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
